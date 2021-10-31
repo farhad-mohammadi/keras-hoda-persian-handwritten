@@ -57,7 +57,7 @@ model.compile(loss = 'categorical_crossentropy',optimizer='adam', metrics=['accu
 #print(model.summary())
 
 # fit the model
-model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=1, batch_size=64, verbose=1)
+model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=4, batch_size=128, verbose=1)
 
 #save the model
 model.save('model.h5')
